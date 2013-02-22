@@ -22,6 +22,14 @@
 	}
 	echo '<br />数组个数 : '.count($array3);
 	
+	//	排序
+	/*
+	 * sort()	按值排序，丢弃原键
+	 * asort()	按值排序，维持原键
+	 * ksort()	按键排序
+	 * rsort()	arsort()	krsort()	倒序
+	 */
+	
 	//	日期练习
 	$years = range(1970, 2013);
 	$months = array(1=>'一月', '二月', '三月', '四月', '五月', '六月', '七月', '八月', '九月', '十月', '十一月', '十二月');
@@ -50,6 +58,10 @@
 		echo '<option value="'.$k_day.'">'.$v_day.'</option><br/>';
 	}
 	echo '</select>';
+	
+	//	数组、字符串 相互转换
+	$string = '1,2,3,4,5';
+	$array = explode(',', $string);
 ?>
 	</form>
 </body>
